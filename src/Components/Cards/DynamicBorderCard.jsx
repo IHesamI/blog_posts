@@ -1,16 +1,23 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
 
 export default function DynamicBorderCard() {
   const blobref = useRef(null);
   const fakeblobref = useRef(null);
+  useEffect(() => {
+    window.addEventListener('mousemove',handleMouseMove);
+  
+    return () =>window.removeEventListener('mousemove',handleMouseMove);
+  }, [])
+  
   function handleMouseMove(ev) {
     if (blobref.current) {
-      const rec = fakeblobref.current.getBoundingClientRect();
-
+        const rec = fakeblobref.current.getBoundingClientRect();
       blobref.current.animate(
         [
           {
-            transform: `translate(${ev.clientX - rec.left - rec.width / 2}px,${  ev.clientY - rec.top - rec.height / 2}px)`,
+            transform: `translate(${(ev.clientX - rec.left )- (rec.width / 2)}px,${
+              (ev.clientY - rec.top) - (rec.height / 2)
+            }px)`,
           },
         ],
         {
@@ -22,7 +29,7 @@ export default function DynamicBorderCard() {
   }
 
   return (
-    <div onMouseMove={handleMouseMove} className={"card"}>
+    <div className={"card"}>
       <div className="inner">
         <h3>Zarp</h3>
         <p>hello to you dash namosan bia ino bebin</p>

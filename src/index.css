@@ -6,15 +6,32 @@
     .links{
      @apply relative before:hover:border-red-600 before:border-b  before:absolute  before:h-6 before:w-0 before:transition-all before:duration-300 before:ease-in-out after:absolute after:-top-2 after:-left-2 after:w-4  after:transition-all after:duration-300 after:ease-in-out  hover:before:w-[calc(100%)]  hover:after:w-fit;   
     }
+    .menu{
+        @apply flex flex-col bg-background;
+    }
+    .inner{
+        @apply rounded-[10px] w-[210px] h-[150px]  bg-cardBackground text-textcolor p-[20px];
+    }
+    .card{
+        @apply bg-neutral-500/[0.1] p-[2px] rounded-[12px] relative overflow-hidden z-[1];
+    }
+    .blob{
+        @apply blur-2xl absolute z-[-1] w-[250px] h-[250px] top-0 left-0 rounded-[50%] bg-[#ffffff] bg-opacity-50;
+    }
+    .fblob{
+        @apply hidden absolute z-[-1] top-0 left-0 w-[200px] h-[200px] rounded-[50%];
+    }
 }
 
 @layer base{
     :root {
         --color-background:#ffffff;
         --color-text:#121212;
+        --color-Cardbackground:#dedeff;
     }
     :root [data-theme='dark'] {
         --color-background:#100F15;
         --color-text:#ffffff;
+        --color-Cardbackground:#17171C;
     }
 }

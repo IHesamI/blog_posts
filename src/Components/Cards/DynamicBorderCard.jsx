@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 
-export default function DynamicBorderCard() {
+export default function DynamicBorderCard({children}) {
   const blobref = useRef(null);
   const fakeblobref = useRef(null);
   useEffect(() => {
@@ -29,10 +29,9 @@ export default function DynamicBorderCard() {
   }
 
   return (
-    <div className={"card"}>
+    <div className="card">
       <div className="inner">
-        <h3>Zarp</h3>
-        <p>hello to you dash namosan bia ino bebin</p>
+        {children}
       </div>
       <div ref={blobref} className="blob"></div>
       <div ref={fakeblobref} className="fblob"></div>

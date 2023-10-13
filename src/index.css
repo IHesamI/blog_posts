@@ -10,10 +10,10 @@
         @apply flex flex-col bg-background;
     }
     .inner{
-        @apply rounded-[10px] w-[210px] h-[150px]  bg-cardBackground text-textcolor p-[20px];
+        @apply rounded-[10px] w-fit h-[150px]  bg-cardBackground text-textcolor p-[20px];
     }
     .card{
-        @apply relative bg-neutral-500/[0.1] p-[3px] rounded-[12px] overflow-hidden z-[1];
+        @apply relative bg-neutral-500/[0.1] p-[3px] rounded-[12px] overflow-hidden z-[1] cursor-pointer;
     }
     .blob{
         @apply blur-2xl absolute z-[-1] w-[250px] h-[250px] top-0 left-0 rounded-[50%] bg-[#ffffff] bg-opacity-50 transition-all ease-in-out duration-300;

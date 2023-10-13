@@ -10,7 +10,7 @@
         @apply flex flex-col bg-background;
     }
     .inner{
-        @apply rounded-[10px] w-fit h-[150px]  bg-cardBackground text-textcolor p-[20px];
+        @apply rounded-[10px] w-fit  bg-cardBackground text-textcolor p-[20px];
     }
     .card{
         @apply relative bg-neutral-500/[0.1] p-[3px] rounded-[12px] overflow-hidden z-[1] cursor-pointer;

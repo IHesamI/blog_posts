@@ -7,7 +7,9 @@ export default {
   theme: {
     extend: {
       colors:{
-        background:'var(--color-background)'
+        background:'var(--color-background)',
+        textcolor:'var(--color-text)',
+        cardBackground:'var(--color-Cardbackground)',
       }
     },
   },

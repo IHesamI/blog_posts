@@ -1,12 +1,10 @@
 import React from "react";
-import DynamicBorderCard from "./Cards/DynamicBorderCard";
-import VerticalCards from "./Cards/VerticalCards";
 import BigCardWrapper from "./Cards/BigCardWrapper";
 import CircleTagCards from "./Cards/CircleTagCards";
-
+import HorizontalCard from "./Cards/HorizontalCard";
 export default function Body() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col justify-center m-auto gap-5">
       <div className="flex flex-wrap gap-3 justify-center mt-2">
         <BigCardWrapper
           cardsList={[
@@ -45,14 +43,76 @@ export default function Body() {
           ]}
         />
       </div>
-      <div className="flex flex-col text-textcolor justify-center items-center">
+      <div className="flex flex-col text-textcolor justify-center items-center gap-5">
         <h1 className="text-2xl">Popular Tags</h1>
-        <div className="flex flex-wrap gap-5">
+        <div className="flex flex-wrap gap-5 m-auto w-[80%]">
+          <CircleTagCards imagesrc={'https://picsum.photos/id/123/250/250'} title={'gray'} postCount={5} />
+          <CircleTagCards imagesrc={'https://picsum.photos/id/426/250/250'} title={'river'} postCount={5} />
+          <CircleTagCards imagesrc={'https://picsum.photos/id/23/250/250'} title={'fork'} postCount={5} />
           <CircleTagCards imagesrc={'https://picsum.photos/id/630/250/250'} title={'trees'} postCount={5} />
           <CircleTagCards imagesrc={'https://picsum.photos/id/200/250/250'} title={'cow'} postCount={2} />
           <CircleTagCards imagesrc={'https://picsum.photos/id/1000/250/250'} title={'mountain'} postCount={9} />
           <CircleTagCards imagesrc={'https://picsum.photos/id/400/250/250'} title={'flower'} postCount={4} />
           <CircleTagCards imagesrc={'https://picsum.photos/id/15/250/250'} title={'waterfall'} postCount={2} />
+        </div>
+        <div
+        className="flex flex-wrap justify-center gap-3">
+        <HorizontalCard
+          title={'cardsList[bigcardIndex].title'}
+          tags={[]}
+          imagesrc={'https://picsum.photos/id/13/250/250'}
+          imageSize={150}
+          description={'cardsList[bigcardIndex].description'}
+        />
+        <HorizontalCard
+          title={'cardsList[bigcardIndex].title'}
+          tags={[]}
+          imagesrc={'https://picsum.photos/id/13/250/250'}
+          imageSize={150}
+          description={'cardsList[bigcardIndex].description'}
+        />
+        <HorizontalCard
+          title={'cardsList[bigcardIndex].title'}
+          tags={[]}
+          imagesrc={'https://picsum.photos/id/13/250/250'}
+          imageSize={150}
+          description={'cardsList[bigcardIndex].description'}
+        />
+        <HorizontalCard
+          title={'cardsList[bigcardIndex].title'}
+          tags={[]}
+          imagesrc={'https://picsum.photos/id/13/250/250'}
+          imageSize={150}
+          description={'cardsList[bigcardIndex].description'}
+        />
+        <HorizontalCard
+          title={'cardsList[bigcardIndex].title'}
+          tags={[]}
+          imagesrc={'https://picsum.photos/id/13/250/250'}
+          imageSize={150}
+          description={'cardsList[bigcardIndex].description'}
+        />
+        <HorizontalCard
+          title={'cardsList[bigcardIndex].title'}
+          tags={[]}
+          imagesrc={'https://picsum.photos/id/13/250/250'}
+          imageSize={150}
+          description={'cardsList[bigcardIndex].description'}
+        />
+        <HorizontalCard
+          title={'cardsList[bigcardIndex].title'}
+          tags={[]}
+          imagesrc={'https://picsum.photos/id/13/250/250'}
+          imageSize={150}
+          description={'cardsList[bigcardIndex].description'}
+        />
+        <HorizontalCard
+          title={'cardsList[bigcardIndex].title'}
+          tags={[]}
+          imagesrc={'https://picsum.photos/id/13/250/250'}
+          imageSize={150}
+          description={'cardsList[bigcardIndex].description'}
+        />
         </div>
       </div>
     </div>

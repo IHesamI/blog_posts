@@ -4,7 +4,7 @@ export default function DropDown({ title, items }) {
   return (
     <div className="block cursor-pointer">
       <div className="flex flex-row links peer items-center ">{title} <UilAngleDown  className={"text-xs font-light"}/></div>
-      <div className="hidden menu peer-hover:flex peer-hover:absolute hover:absolute hover:flex ">
+      <div className="dropdownmenu">
         {
         items.map((item, index) => (
           <a key={index} href="#">

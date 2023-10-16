@@ -2,7 +2,7 @@ import React from "react";
 
 export default function CircleTagCards({ title, imagesrc, postCount }) {
   return (
-    <div className="flex flex-row items-center bg-cardBackground rounded-full px-[25px] py-3 gap-2">
+    <div className="CircleCard">
       <img
         className="rounded-full"
         src={imagesrc}

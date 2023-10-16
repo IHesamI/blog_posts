@@ -9,7 +9,7 @@ export default function Header() {
     changeTheme(root)
   }
   return (
-    <div className="flex flex-row justify-evenly items-center text-textcolor">
+    <div className="flex flex-row justify-evenly items-center text-textcolor mt-3">
       <div className="flex flex-row gap-5">
         <a className="links" href="#">
           Tags

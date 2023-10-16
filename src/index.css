@@ -21,12 +21,22 @@
     .fblob{
         @apply absolute z-[-1] top-0 left-0 w-[200px] h-[200px] rounded-[50%];
     }
+    .CircleCard{
+        @apply w-[250px] flex flex-row items-center bg-cardBackground rounded-full px-[25px] py-3 gap-2 cursor-pointer hover:opacity-90;
+    }
+    .iconlink{
+        @apply w-[30px] h-[30px] bg-iconbg flex justify-center items-center rounded-full;
+    }
+    .dropdownmenu{
+        @apply w-[100px] max-w-[150px] hidden menu peer-hover:flex peer-hover:absolute hover:absolute hover:flex z-10;
+    }
 }
 
 @layer base{
     :root {
         --color-background:#ffffff;
         --color-text:#121212;
+        --color-iconbg:#313438;
         --color-Cardbackground:#dedeff;
     }
     :root [data-theme='dark'] {

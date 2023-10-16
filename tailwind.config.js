@@ -7,6 +7,7 @@ export default {
         background: "var(--color-background)",
         textcolor: "var(--color-text)",
         cardBackground: "var(--color-Cardbackground)",
+        iconbg:'var(--color-iconbg)',
       },
     },
   },

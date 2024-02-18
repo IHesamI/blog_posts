@@ -1,8 +1,21 @@
+import { useEffect } from "react";
+import { changeTheme } from "./utils/themeProvider";
+import Header from "./Components/Header";
+import Body from "./Components/Body";
+import Footer from "./Components/Footer";
+
 function App() {
+  useEffect(() => {
+    const root = document.getElementById("root");
+    changeTheme(root);
+  }, []);
+
   return (
-    <>
-      <p className="text-red-600 bg-gray-700">This is a test</p>
-    </>
+    <div className="flex flex-col bg-background gap-6">
+      <Header />
+      <Body/>
+      <Footer/>
+    </div>
   );
 }
 
